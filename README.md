@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/twilio-logo.png" />
+  <img src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/twilio-logo.png" />
   <br/>
   React Native Twilio Chat
 </h1>
@@ -18,7 +18,7 @@ I searched the internet a lot to find the best way to use Twilio Programmable Ch
 
 Install the repository:
 ```sh
-git clone https://github.com/Gapur/react-native-twilio-chat.git
+git clone https://github.com/lionking0105/react-native-twilio-chat.git
 ```
 
 After that, move it into the react-native-twilio-chat directory and run it from the terminal:
@@ -39,25 +39,25 @@ To set up our backend for Chat, we’ll need four values from our Twilio account
 Now, if your account is ready, you can find your account SID on the [Twilio Console](https://www.twilio.com/console). You should copy and paste it as the value TWILIO_ACCOUNT_SID to the .env file.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/account_sid.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/account_sid.png">
 </p>
 
 Next, We need to generate an API key and API secret by navigating to Settings > API Keys > New API Key.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/new_api_key.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/new_api_key.png">
 </p>
 
 If you create these things successfully, let’s copy and paste the SID and secret as the values TWILIO_API_KEY and TWILIO_API_SECRET.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/sid_and_secret_key.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/sid_and_secret_key.png">
 </p>
 
 Last, we need to create a new Chat Service by navigating to All Products & Services > Programmable Chat > Services > Chat Services.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/chat_service.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/chat_service.png">
 </p>
 
 Let’s copy and paste the service SID as the value TWILIO_CHAT_SERVICE_SID.
@@ -162,7 +162,7 @@ export function WelcomeScreen({ navigation }) {
 We’ll use the username to generate the Twilio access token.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/welcome-screen.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/welcome-screen.png">
 </p>
 
 ## Chat-Create Screen
@@ -284,7 +284,7 @@ Once the chat client is initialized, we can create a new chat channel with [crea
 If the channel doesn’t exist, an exception will be thrown. If it does exist, the method will return the channel resource, and from there, the channel can be joined.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/chat-create-screen.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/chat-create-screen.png">
 </p>
 
 ## Chat List Screen
@@ -395,7 +395,7 @@ Twilio doesn’t give you the feature to sort the channel list based on a most r
 Therefore I subscribed to the messageAdded event, which fires when a new message has been added to the channel on the server because I want to sort the channel list by the last-message time. So when someone messages via the chat, we’ll update the last-message time of the specific channel.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/chat-list-screen.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/chat-list-screen.png">
 </p>
 
 ## Chat Room Screen
@@ -474,14 +474,14 @@ export function ChatRoomScreen({ route }) {
 I created a method called onSend(). This method will call the SDK method sendMessage() on the channel object and pass the message typed by your user to it.
 
 <p>
-  <img width="800"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/chat-room-screen.png">
+  <img width="800"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/chat-room-screen.png">
 </p>
 
 
 ## Let’s Demo Our Twilio Chat App
 
 <p align="center">
-  <img width="600"src="https://github.com/Gapur/react-native-twilio-chat/blob/master/src/assets/example.gif">
+  <img width="600"src="https://github.com/lionking0105/react-native-twilio-chat/blob/master/src/assets/example.gif">
 </p>
 
 ## Article on Medium
